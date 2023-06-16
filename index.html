@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Quote</title>
+</head>
+<body onload="f()">
+    <nav>
+        <button onclick="showFav()" id="btnFav"><i class="fa-regular fa-star"></i></button>
+        <div class="save">No favorite quotes yet. Could we BE any more empty?</div>
+    </nav>
+    <h1><span id="friends">F <span class="red">°</span> R <span class="blue">°</span> I <span class="yellow">°</span> E <span class="red">°</span> N <span class="blue">°</span> D <span class="yellow">°</span> S </span> edition</h1>
+    <div class="flip-card">
+        <div class="flip-card-inner"  id="flipCardInner">
+            <div class="flip-card-front">
+                <p id="auteur">...once said ...</p>
+                <img src="Chandler.jpg" alt="photo">
+                <p id="ps">ps:hover me if you wanna know what he said</p>
+            </div>
+            <div class="flip-card-back">
+                <div id="TheQuote">quote</div>
+                <div id="click">
+                <button onclick="f(), stopHover()" id="flipButton">more</button>
+                <button onclick="QuoteFav()" id="btnSave">save</button>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

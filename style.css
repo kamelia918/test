@@ -1,0 +1,152 @@
+@import url(//db.onlinewebfonts.com/c/0b7d8a39b62b28cf0cfe3cea90b8baa3?family=Gabriel+Weiss+Friends+Font);
+
+@font-face {
+    font-family: "Gabriel Weiss' Friends Font";
+    src: url("//db.onlinewebfonts.com/t/0b7d8a39b62b28cf0cfe3cea90b8baa3.eot");
+    src: url("//db.onlinewebfonts.com/t/0b7d8a39b62b28cf0cfe3cea90b8baa3.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0b7d8a39b62b28cf0cfe3cea90b8baa3.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0b7d8a39b62b28cf0cfe3cea90b8baa3.woff") format("woff"), url("//db.onlinewebfonts.com/t/0b7d8a39b62b28cf0cfe3cea90b8baa3.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0b7d8a39b62b28cf0cfe3cea90b8baa3.svg#Gabriel Weiss' Friends Font") format("svg");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Nunito:wght@300&family=Sigmar&display=swap');
+
+
+
+body {
+    font-family:'Lobster Two',cursive;
+    background-color: #F8EAD8;
+}
+
+h1 {
+    margin-left: 430px;
+}
+
+#friends {
+    font-family: "Gabriel Weiss' Friends Font";
+}
+.red{
+    color: red;
+}
+.blue{
+    color: blue;
+}
+.yellow{
+    color: yellow;
+}
+
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    position: absolute;
+    left: 500px;
+    top: 200px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+
+.flip-card.stop-hover .flip-card-inner {
+    transform: none;
+}
+
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #A7727D;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: #F9F5E7;
+    border: 2px solid #A7727D;
+    color: black;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#TheQuote {
+    padding: 20px 10px 30px 10px;
+    text-align: center;
+}
+
+button {
+    background-color: #EDDBC7;
+    border: 1px solid #A7727D;
+    border-radius: 20px;
+    width: 100px;
+    height: 25px;
+}
+
+button:hover {
+    background-color: #A7727D;
+    color: #EDDBC7;
+}
+
+#click {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+
+.save {
+    width: 350px;
+    border: 2px solid #F9F5E7;
+    background-color: #A7727D;
+    color: white;
+    position: absolute;
+    left: 20px;
+    top: 35px;
+    border-radius: 0 20px 20px 20px;
+    display: none;
+    text-align: center;
+    font-size: small;
+}
+
+.save p {
+    border-bottom: 1px solid #F9F5E7;
+    padding-bottom: 10px;
+}
+
+.save p:last-child {
+    border: none;
+}
+
+#ps {
+    color: rgb(0, 0, 0, 0.5);
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    width: 230px;
+    height: 200px;
+}
+
+
+
